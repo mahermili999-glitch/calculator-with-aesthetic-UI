@@ -1,2 +1,3 @@
 # calculator-with-aesthetic-UI
+The Aesthetic Calculator is a web application featuring a visually appealing design with soft color palettes, rounded styling, and smooth transitions for a cozy user experience. Built with HTML5, CSS3, and JavaScript, it provides standard mathematical operations and is fully responsive across desktop and mobile devices. Explore the project code at GitHub.
 in this repository I have make a calculator in well structured way .I hope you will enjoy this.It is my project that I have created with my best . if you are looking for a good interface level project then you are on the right page . the see and enjoy .good luck 
