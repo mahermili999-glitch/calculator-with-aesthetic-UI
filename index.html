@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div class="starter">
+
+        <img src="image.png" class="starter-img" alt="">
+
+        <div class="bubble-container">
+            <div class="pink-bubble"></div>
+            <div class="skyblue-bubble"></div>
+            <div class="green-bubble"></div>
+            <div class="black-bubble"></div>
+
+            <div class="pink-bubble"></div>
+            <div class="skyblue-bubble"></div>
+            <div class="green-bubble"></div>
+            <div class="black-bubble"></div>
+        </div>
+
+    </div>
+
+    <!-- Calculator -->
+    <div class="calculator">
+        <div class="background-circle"></div>
+        <div class="tiny1"></div>
+        <div class="tiny2"></div>
+        <div class="tiny3"></div>
+        <div class="tiny4"></div>
+        <div class="tiny5"></div>
+        <div class="tiny6"></div>
+        <div class="fake-calc">
+                <div class="f-numeric">
+                <button class="f1">1</button>
+                <button class="f2">2</button>
+                <button class="f3">3</button>
+                <button class="f0">0</button>
+                <button class="fdot">.</button>
+                </div>
+                <div class="fake-equal">
+                    <button class="fplus">+</button>
+                    <button class="f-equal">=</button>
+                </div>
+            </div>
+            </div>
+            <div class="real-calc">
+                <input type="text" placeholder="" id="display" name="display" class="digit-holder">
+                <div class="digit">
+                <div class="first-row">
+                    <button type="button"  id="clear" value="AC" onclick="display.value = '' " >Ac</button>
+                    <button type="button"  id="del" value="Del" onclick=" display.value = display.value.toString().slice(0,-1) ">X</button>
+                    <button type="button"  data-value="/" class="three-blue" >/</button>
+                    <button type="button"  value="*" onclick=" display.value += '*' " class="three-blue">*</button>
+                </div>
+                <div class="second-row">
+                    <button type="button"  class="same" value="7" onclick="display.value += '7' ">7</button>
+                    <button type="button"  class="same" value="8" onclick="display.value += '8' ">8</button>
+                    <button type="button"  class="same" value="9" onclick="display.value += '9' ">9</button>
+                    <button type="button"  class="three-blue"   value="-" onclick="display.value += '-' "  >-</button>
+                </div>
+                <div class="third-row">
+                    <button type="button"  class="same" value="4" onclick="display.value += '4' ">4</button>
+                    <button type="button"  class="same" value="5" onclick="display.value += '5' ">5</button>
+                    <button type="button"  class="same" value="6" onclick="display.value += '6' ">6</button>
+                    <button type="button"  class="large" value="+" onclick="display.value += '+' ">+</button>
+                </div>
+                <div class="fourth-row">
+                    <button type="button"  class="same" value="1" onclick="display.value += '1' ">1</button>
+                    <button type="button"  class="same" value="2" onclick="display.value += '2' ">2</button>
+                    <button  type="button"  class="same" value="3" onclick="display.value += '3' ">3</button>
+                    <button type="button"  id="equal" onclick="display.value = eval(display.value)">=</button>
+                </div>
+                <div class="last-row">
+                    <button type="button"  class="zero" value="0" onclick="display.value += '0' ">0</button>
+                    <button type="button"  class="dot" value="." onclick="display.value += '.' ">.</button>
+                </div>
+                </div>
+                            <div class="message">My Cute <br> calculator</div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
